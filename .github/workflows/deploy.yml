@@ -15,7 +15,7 @@ permissions:
 jobs:
   validate:
     if: ${{ github.event.inputs.destroy == 'false' }}
-    name: 🔎 Validar Terraform
+    name:  Validar Terraform
     runs-on: ubuntu-latest
     steps:
       - name: Checkout do código
