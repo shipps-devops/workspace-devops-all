@@ -11,8 +11,8 @@ variable "location" {
 }
 
 variable "admin_password" {
-  description = "Senha do usuário administrador"
+  description = "Senha do usuário administrador (Injetada via GitHub Secrets)"
   type        = string
   sensitive   = true
-  default     = "Pururuca@123!"
+  # IMPORTANTE: Sem default value por segurança!
 }

@@ -57,3 +57,24 @@ logs/
 *.dockerfile
 !Dockerfile
 docker-compose.override.yml
+
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfvars
+override.tf
+override.tf.json
+.terraform.lock.hcl
+
+# --- Ansible ---
+*.retry
+
+# --- Java & General ---
+*.class
+*.log
+*.jar
+.DS_Store
+.vscode/
+.idea/

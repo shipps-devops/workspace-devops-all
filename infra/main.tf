@@ -60,7 +60,7 @@ resource "azurerm_network_security_group" "nsg" {
   }
 
   security_rule {
-    name                       = "Swagger"
+    name                       = "App-Java"
     priority                   = 1002
     direction                  = "Inbound"
     access                     = "Allow"
@@ -97,8 +97,8 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   source_image_reference {
     publisher = "Canonical"
-    offer     = "0001-com-ubuntu-server-jammy" # Alterado de 'focal' para 'jammy'
-    sku       = "22_04-lts"                    # Alterado de '20_04-lts' para '22_04-lts'
+    offer     = "0001-com-ubuntu-server-jammy"
+    sku       = "22_04-lts"
     version   = "latest"
   }
 }
